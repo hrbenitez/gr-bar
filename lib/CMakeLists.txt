@@ -25,12 +25,9 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND bar_sources
-    try_ff_impl.cc
     packet_checker_impl.cc
     snr_impl.cc
-    out_sync_impl.cc
-    symbol_sync_impl.cc
-    packet_former_cc_impl.cc )
+    out_sync_impl.cc )
 
 set(bar_sources "${bar_sources}" PARENT_SCOPE)
 if(NOT bar_sources)
@@ -53,30 +50,6 @@ endif(APPLE)
 ########################################################################
 include(GrMiscUtils)
 GR_LIBRARY_FOO(gnuradio-bar RUNTIME_COMPONENT "bar_runtime" DEVEL_COMPONENT "bar_devel")
-
-########################################################################
-# Build and register unit test
-########################################################################
-include(GrTest)
-
-include_directories(${CPPUNIT_INCLUDE_DIRS})
-
-list(APPEND test_bar_sources
-    ${CMAKE_CURRENT_SOURCE_DIR}/test_bar.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_bar.cc
-)
-
-add_executable(test-bar ${test_bar_sources})
-
-target_link_libraries(
-  test-bar
-  ${GNURADIO_RUNTIME_LIBRARIES}
-  ${Boost_LIBRARIES}
-  ${CPPUNIT_LIBRARIES}
-  gnuradio-bar
-)
-
-GR_ADD_TEST(test_bar test-bar)
 
 ########################################################################
 # Print summary

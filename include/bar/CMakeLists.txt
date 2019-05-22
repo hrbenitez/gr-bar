@@ -22,10 +22,7 @@
 ########################################################################
 install(FILES
     api.h
-    try_ff.h
     packet_checker.h
     snr.h
-    out_sync.h
-    symbol_sync.h
-    packet_former_cc.h DESTINATION include/bar
+    out_sync.h DESTINATION include/bar
 )

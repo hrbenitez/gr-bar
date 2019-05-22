@@ -17,10 +17,7 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    bar_try_ff.xml
     bar_packet_checker.xml
     bar_snr.xml
-    bar_out_sync.xml
-    bar_symbol_sync.xml
-    bar_packet_former_cc.xml DESTINATION share/gnuradio/grc/blocks
+    bar_out_sync.xml DESTINATION share/gnuradio/grc/blocks
 )
