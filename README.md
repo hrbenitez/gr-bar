@@ -1,9 +1,4 @@
 # gr-bar
-This repository includes custom GRC blocks made for the implementation of a physical layer wireless sensor network testbed built on the work of Bastian Bloessl.
-
-Using cmake will install 3 new blocks to GRC: the Output Synchronizer, the Packet Checker, and Signal-Noise Cutter.
-
-# gr-bar
 
 This repository includes custom GRC blocks made for the implementation of a physical layer wireless sensor network testbed built on the work of Bastian Bloessl. This testbed is expected to measure BER, SER, PER, Latency, Throughput, and SNR of a communication system.
 
@@ -46,8 +41,8 @@ This testbed is actually an undergraduate project and is fully documented in thi
 
 ## Authors
 
-* **Herlan Kester R. Benitez** - *Initial work*
-* **Christian Haven M. Cabuso** - *Initial work*
+* **Herlan Kester R. Benitez**
+* **Christian Haven M. Cabuso**
 
 ## Acknowledgments
 
@@ -57,6 +52,7 @@ We would like to thank our advisers:
 * John Richard Hizon 
 * Marc Rosales
 * Christopher Santos
+
 and our examiner:
 * Paul Jason Co
 
