@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<block>
+  <name>Packet Checker</name>
+  <key>bar_packet_checker</key>
+  <category>[bar]</category>
+  <import>import bar</import>
+  <make>bar.packet_checker($sample_rate, $threshold, $choice)</make>
+  
+  <param>
+    <name>Message Period</name>
+    <key>sample_rate</key>
+    <value>1000000</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <value>10</value>
+    <type>int</type>
+  </param>
+  <param>
+		<name>Latency</name>
+		<key>choice</key>
+		<value>2</value>
+		<type>int</type>
+		<option>
+			<name>Total</name>
+			<key>2</key>
+		</option>
+		<option>
+			<name>Travel Time</name>
+			<key>1</key>
+		</option>
+	</param>
+  
+  <sink>
+    <name>in1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sync1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>in2</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sync2</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>err</name>
+    <type>float</type>
+  </source>
+  <source>
+    <name>thr</name>
+    <type>float</type>
+  </source>
+  <source>
+    <name>lat_ms</name>
+    <type>float</type>
+  </source>
+  
+</block>

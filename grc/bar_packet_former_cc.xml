@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<block>
+  <name>Packet Former</name>
+  <key>bar_packet_former_cc</key>
+  <category>[bar]</category>
+  <import>import bar</import>
+  <make>bar.packet_former_cc($scale)</make>
+  
+  <param>
+    <name>Scale</name>
+    <key>scale</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+  
+</block>

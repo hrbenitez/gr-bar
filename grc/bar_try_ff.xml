@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<block>
+  <name>Synchronizer</name>
+  <key>bar_try_ff</key>
+  <category>[bar]</category>
+  <import>import bar</import>
+  <make>bar.try_ff()</make>
+  <!-- 
+  <param>
+    <name>...</name>
+    <key>...</key>
+    <type>...</type>
+  </param>
+  -->
+  
+  <sink>
+    <name>in1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sync1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>in2</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sync2</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out1</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>out1</name>
+    <type>byte</type>
+  </source>
+</block>

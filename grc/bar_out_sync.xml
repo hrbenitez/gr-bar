@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<block>
+  <name>Output Synchronizer</name>
+  <key>bar_out_sync</key>
+  <category>[bar]</category>
+  <import>import bar</import>
+  <make>bar.out_sync($threshold)</make>
+
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <value>10</value>
+    <type>int</type>
+  </param>
+  
+  <sink>
+    <name>bit1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sym1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sync1</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>bit2</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sym2</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sync2</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>o_b1</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>o_s1</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>o_b2</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>o_s2</name>
+    <type>byte</type>
+  </source>
+</block>

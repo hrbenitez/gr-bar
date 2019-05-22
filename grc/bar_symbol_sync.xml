@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<block>
+  <name>Symbol Sync</name>
+  <key>bar_symbol_sync</key>
+  <category>[bar]</category>
+  <import>import bar</import>
+  <make>bar.symbol_sync($threshold, $packet_length)</make>
+  
+  <param>
+    <name>Threshold</name>
+    <key>threshold</key>
+    <value>10</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Length</name>
+    <key>packet_length</key>
+    <value>32</value>
+    <type>int</type>
+  </param>
+  
+  <sink>
+    <name>sym0</name>
+    <type>byte</type>
+  </sink>
+  <sink>
+    <name>sym1</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out0</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>out1</name>
+    <type>byte</type>
+  </source>
+</block>
