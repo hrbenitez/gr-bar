@@ -4,8 +4,6 @@ This repository includes custom GRC blocks made for the implementation of a phys
 
 ## Getting Started
 
-It is assumed that the user is already familiar with GRC and the installation of additional repositories for GRC.
-
 ### Prerequisites
 
 Aside from standard GNU Radio blocks, you need to have the following GRC repositories installed:
@@ -37,24 +35,25 @@ Some GRC files in the 'examples' folder may need to have their python files gene
 
 ## Usage
 
-This testbed is actually an undergraduate project and is fully documented in this (link to follow) document.
+This testbed is actually an undergraduate project and is fully documented in [this](https://drive.google.com/file/d/1k-PZ24ZglsvscZG_fhPUXv4Ov0nlif5m/view?usp=sharing) document.
 
 ## Authors
 
-* **Herlan Kester R. Benitez**
-* **Christian Haven M. Cabuso**
+* **Herlan Kester R. Benitez** (herlan.benitez@eee.upd.edu.ph)
+* **Christian Haven M. Cabuso** (christian.haven.cabuso@eee.upd.edu.ph)
+
 
 ## Acknowledgments
 
 We would like to thank our advisers:
-* Anastacia Alvarez
-* Maria Theresa De Leon
-* John Richard Hizon 
-* Marc Rosales
-* Christopher Santos
+* Anastacia Alvarez (anastacia.alvarez@eee.upd.edu.ph)
+* Maria Theresa De Leon (theresa.de.leon@eee.upd.edu.ph)
+* John Richard Hizon (richard.hizon@eee.upd.edu.ph)
+* Marc Rosales (marc.rosales@eee.upd.edu.ph)
+* Christopher Santos (christopher.santos@eee.upd.edu.ph)
 
 and our examiner:
-* Paul Jason Co
+* Paul Jason Co (paul.co@eee.upd.edu.ph)
 
 For their insights and guidance in this project.
 
